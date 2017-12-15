@@ -54,7 +54,11 @@ public class MyBottomDialog extends Dialog {
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            MyBottomDialog.this.dismiss();
+            switch (view.getId()){
+                case R.id.text_pop_identy_cancel:
+                      MyBottomDialog.this.dismiss();
+                    break;
+            }
         }
     };
 
